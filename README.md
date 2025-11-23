@@ -4,38 +4,32 @@
 
 ![DromEd Level Editor Developer Textures Kit - Kit Preview](https://image.ibb.co/kYWbaa/dledtk_preview.png)
 
-> **Current version**: 1.2.2 (2017.12.28) - [**[Latest release](https://github.com/jonathanlinat/dledtk/releases/latest)**] [[Online README](https://github.com/jonathanlinat/dledtk/blob/master/README.md)] [[Project homepage](https://github.com/jonathanlinat/dledtk)] [[TTLG thread](http://www.ttlg.com/forums/showthread.php?t=147675&p=2351521&viewfull=1#post2351521)]
+> **Current version**: 1.2.3 (2025.11.23) - [[Original Project Page](https://github.com/jonathanlinat/dledtk)] [[TTLG thread](http://www.ttlg.com/forums/showthread.php?t=147675&p=2351521&viewfull=1#post2351521)]
+
+**Changes from original project by Jonathan Linat**
+
+The original project has sadly not received any updates in 8 years, leaving two issues present in the pack. These problems are now fixed in this fork.
+- Removed 'dledtk' prefix from files to reduce file string length.
+- Adjusted .mtl definition files to always display correctly when lighting is baked.
 
 This set has now **222 textures** (+58): 1x1, 1x2, 1x4, 1x8; 2x1, 2x2, 2x4, 2x8; 4x1, 4x2, 4x4, 4x8; 8x1, 8x2, 8x4, 8x8 + Material Design colored ones + 4 special ones.
 
 ## Install
 
-You have two available options.
-
-### Option 1: Cloning from GitHub
-
-Start a new instance of the command interpreter `cmd` and locate your FM's `fam/` folder before cloning this repository as a new family.
-
-```bash
-$ cd C:\<path/to/your/local/fms/fam/folder>
-$ git clone https://github.com/jonathanlinat/dledtk.git
-```
-
-![DromEd Level Editor Developer Textures Kit - Git Clone](https://image.ibb.co/cTZjTv/dledtk_gitclone.png)
-
-You should now have a new folder called `dledtk`.
-
-### Option 2: Downloading the latest release
-
-Download the latest binary from the [Releases page](https://github.com/jonathanlinat/dledtk/releases/latest). It's the easiest way to get started with **DromEd Level Editor Developer Textures Kit**.
-
-Extract the files into your FM's `fam/` folder in order to create a new family.
-
-You should now have a new folder called `dledtk`.
+Download this repo as a .zip by clicking the 'Code' button above.
 
 ## Usage
 
-Import your new **DromEd Level Editor Developer Textures Kit** textures family into DromEd level editor and apply them to your fan mission brushes.
+Best practice is to create a dedicated mod folder for editor textures (unless you deliberately want to use these textures).
+- Create a new folder called 'EditorMod', and another folder called 'dledtk'.
+- Inside the 'dledtk' folder, extract the 'fam' folder from the .zip of the repo
+- In your Thief 1/2 root folder, either copy or symlink/junction your new 'EditorMod' folder to your install.
+- In your 'cam_mod.ini' file, modify the 'mod_path' line to look something like this:
+```
+; these are normal mod paths which are applied after the active FM in the search order
+mod_path .\EditorMods\dledtk
+```
+- And you're done! You can now load the texture family when inside DromEd.
 
 ![DromEd Level Editor Developer Textures Kit - Import textures](https://image.ibb.co/nr4jTv/dledtk_importtextures.png)
 
